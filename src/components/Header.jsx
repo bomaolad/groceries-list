@@ -1,9 +1,13 @@
-import React from "react";
-
-export default function Header({ title = "Welcome to My App" }) {
+const Header = ({ title }) => {
   return (
-    <div>
+    <header>
       <h1>{title}</h1>
-    </div>
+    </header>
   );
-}
+};
+
+Header.defaultProps = {
+  title: "Default Title",
+};
+
+export default Header;

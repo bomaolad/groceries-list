@@ -1,12 +1,11 @@
-import React from 'react'
-
-const Footer = () => {
-    const year= new Date().getFullYear()
+const Footer = ({ length }) => {
   return (
-    <div>
-      <p>Copyright &copy; {year}</p>
-    </div>
-  )
-}
+    <footer>
+      <p>
+        {length} List {length === 1 ? "item" : "items"}
+      </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
